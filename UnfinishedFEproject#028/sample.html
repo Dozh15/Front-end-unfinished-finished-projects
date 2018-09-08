@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html><head>	
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>SKAIC</title>
+</head>
+<script type="text/javascript" src="script/script.js"></script>
+<body>
+<div>
+
+<div id="headline" class="wrapper">
+		<div id="icon-bar">
+			icon
+		</div>
+
+		<div id="left-side">
+			
+			<div id="lang-bar">
+			<label>
+				<a class="lang-button" id="LT-lang-button">LT</a>
+			</label>
+
+			<label>
+				<a class="lang-button" id="RU-lang-button">RU</a>
+			</label>
+			<label>
+				<a class="lang-button" id="EN-lang-button">EN</a>
+			</label>
+			</div>
+			
+			<div id="help-bar">
+				help me
+			
+			</div>
+		</div>
+</div>
+
+<div id="act-cont-1" class="wrapper">
+		
+		<div id="button-bar-left">
+			<form>
+			<div id="project-user" class="button-bar">
+				<div id="inside-project-user">
+					<label>
+						<input type="text" name="uzsakovas-text" placeholder="uzsakovas">
+					</label>
+
+					<label>
+						<input type="text" name="pavadinimas-text" placeholder="pavadinimas">
+					</label>
+
+					<label>
+						<input type="text" name="telefonas-text" placeholder="86XXXXXXXX">
+					</label>
+
+					<label>
+						<input type="text" name="mail-text" placeholder="XXXX@XXXXX.com">
+					</label>
+				
+				</div>
+			</div>
+
+			<div id="install-type" class="button-bar">
+				<label>
+					<a  class="button" id="install-type-left" onclick="installTypeLeft()">Example-1</a>
+				</label>
+				<label>
+					<a  class="button" id="install-type-right" onclick="installTypeRight()">Example-2</a>
+				</label>
+				
+			</div>
+
+			<div id="vnf-option" class="button-bar">
+				<div id="vnf-option-top">
+					<label>
+					<a id="v-o-b-l-button" class="button" onclick="vnfOptionLeftTop	()">v-o-b</a>
+					</label>
+
+					<label>
+					<a id="v-o-b-r-button" class="button">v-o-b-dsdsdsdsds</a>
+					</label>
+				</div>
+				<div id="vnf-option-bot">
+					<label>
+						<a id="v-o-b-l-b-button" class="button" onclick="vnfOptionLeftBot()">voblb</a>
+					</label>
+					<label>
+						<a id="v-o-b-r-b-button" class="button" onclick="vnfOptionRightBot()">voblb</a>
+					</label>
+				</div>
+				
+
+
+
+					<!--
+					<label>
+						<a class="button" id="vnf-option-button-top-left"></a>					
+					</label>
+					<label>
+						<a class="button" class="vnf-option-button"></a>
+					</label>
+					
+					<label>
+						<a class="button" class="vnf-option-button"></a>					
+					</label>
+					<label>
+						<a class="button" class="vnf-option-button"></a>
+					</label>
+					-->
+				
+			</div>
+
+			<div id="energy-option" class="button-bar">
+				<div id="energy-option-top" class="energy-option-bar">
+					<label>
+						<a class="button" id="energy-option-top-left">1</a>
+					</label>
+					<label>
+						<a class="button" id="energy-option-top-right">1</a>
+					</label>
+				</div>
+				<div id="energy-option-mid" class="energy-option-bar">
+					<label>
+						<a class="button" id="energy-option-mid-left" onclick="check()">1</a>
+					</label>
+					<label>
+						<a class="button" id="energy-option-mid-right" onclick="check()">1</a>
+					</label>
+				</div>
+				<div id="energy-option-bot" class="energy-option-bar">
+					<label>
+						<a class="button" id="energy-option-bot-left" onclick="check()">1</a>
+					</label>
+					<label>
+						<a class="button" id="energy-option-bot-right" onclick="check()">1</a>
+					</label>
+				</div>
+			</div>
+
+			<div id="heater-option" class="button-bar"> 
+				<label>
+					<a class="small-button" id="heater-1" onclick="heater1()">1</a>
+				</label>
+				<label>
+					<a class="small-button" id="heater-2" onclick="heater2()">2</a>
+				</label>
+				<label>
+					<a class="small-button" id="heater-3" onclick="heater3()">3</a>
+				</label>
+			</div>
+
+			<div id="cooler-option" class="button-bar">
+				<label>
+					<a class="small-button" id="cooler-1" onclick="cooler1()">1</a>
+				</label>
+				<label>
+					<a class="small-button" id="cooler-2" onclick="cooler2()">2</a>
+				</label>
+				<label>
+					<a class="small-button" id="cooler-3" onclick="cooler3()">3</a>
+				</label>
+			</div>
+			<div id="d-heater-option" class="button-bar">
+				<label>
+					<a class="small-button" id="d-heater-1" onclick="dheater1()">1</a>
+				</label>
+				<label>
+					<a class="small-button" id="d-heater-2" onclick="dheater2()">2</a>
+				</label>
+				<label>
+					<a class="small-button" id="d-heater-3" onclick="dheater3()">3</a>
+				</label>
+			</div>
+		</form>
+	</div>
+
+	<div id="image-obj-1" class="image-obj">
+			<img id="image" src="media/foto.png">
+	</div>
+
+</div>
+
+<div id="act-cont-2" class="wrapper">
+
+		<div id="button-bar-left-2">
+			<form>
+				<div class="button-bar" id="supply-air-value">
+					<!--supply air value-->
+					<div id="inside-air-valve">
+						<p id="valve-dimension-p">Valve Dimensions</p>
+					<label>
+						<input type="text" name="valve-dimension-1" id="valve-dimension-1" placeholder="dimension X">
+					</label>
+					<label>
+						<a href="#" id="x-button" class="button">X</a>
+					</label>
+					<label>
+						<input type="text" name="valve-dimension-2" id="valve-dimension-2" placeholder="dimension Y">
+					</label>
+					</div>
+				</div>
+
+				<div class="button-bar" id="supply-fan-section">
+					<!--supply fan section-->
+					<div id="engine-power-amount">
+						<p>Engine power(Kw) and amount</p>
+						<label>
+							<input type="text" name="engine-power" id="engine-power" placeholder="Kw">
+						</label>
+						<label>
+							<input type="text" name="engine-amount" id="engine-amount" placeholder="number">
+						</label>
+					</div>
+
+					<div id="motor-connection">
+						<p id="motor-connection-text">Type of motor connection</p>
+						<!--<ul>
+							<label>
+								<a id="motor-button-1"class="small-button">motor1</a>
+							</label>
+								
+							<label>
+								<a id="motor-button-2"class="small-button">motor2</a>
+							</label>
+
+							<label>
+								<a id="motor-button-3"class="small-button">motor3</a>
+							</label>
+						</ul>-->
+						<div id="motor-connection-inside">
+						<label>
+							<a class="small-button" id="motor-button-1" onclick="dheater1()">1</a>
+						</label>
+						<label>
+							<a class="small-button" id="motor-button-2" onclick="dheater2()">2</a>
+						</label>
+						<label>
+							<a class="small-button" id="motor-button-2" onclick="dheater3()">3</a>
+						</label>
+						</div>
+					</div>
+
+					<div id="number-phases">
+						<p>Phases</p>
+						<div id="number-phases-inside">
+						<label>
+							<a class="small-button" id="phase-button-1">1</a>
+						</label>
+						<label>
+							<a class="small-button" id="phase-button-2">2</a>
+						</label>
+						</div>
+					</div>
+					<div id="engine-extras">
+						<div id="engine-extras-inside">
+						<label>
+							<a class="small-button" id="engine-extras-button-1" onclick="dheater1()">1</a>
+						</label>
+						<label>
+							<a class="small-button" id="engine-extras-button-2" onclick="dheater2()">2</a>
+						</label>
+						<label>
+							<a class="small-button" id="engine-extras-button-2" onclick="dheater3()">3</a>
+						</label>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="button-bar" id="exhaust-air-value"> 
+								<p id="exhaust-air-value-text">exhaust air value dimension</p>
+						<label>
+							<input type="text" name="exhaust-air-value-dimension-x" id="exhaust-air-value-dimension-x" placeholder="dimension x">
+						</label>
+						<label>
+							<input type="text" name="exhaust-air-value-dimension-y" id="exhaust-air-value-dimension-y" placeholder="dimension y">
+						</label>
+
+				</div>
+
+
+
+
+
+				<div class="button-bar" id="supply-fan-section">
+					<!--supply fan section-->
+					<div id="engine-power-amount">
+						<p>Engine power(Kw) and amount</p>
+						<label>
+							<input type="text" name="engine-power" id="engine-power" placeholder="Kw">
+						</label>
+						<label>
+							<input type="text" name="engine-amount" id="engine-amount" placeholder="number">
+						</label>
+					</div>
+
+					<div id="motor-connection">
+						<p id="motor-connection-text">Type of motor connection</p>
+						<!--<ul>
+							<label>
+								<a id="motor-button-1"class="small-button">motor1</a>
+							</label>
+								
+							<label>
+								<a id="motor-button-2"class="small-button">motor2</a>
+							</label>
+
+							<label>
+								<a id="motor-button-3"class="small-button">motor3</a>
+							</label>
+						</ul>-->
+						<div id="motor-connection-inside">
+						<label>
+							<a class="small-button" id="motor-button-1" onclick="dheater1()">1</a>
+						</label>
+						<label>
+							<a class="small-button" id="motor-button-2" onclick="dheater2()">2</a>
+						</label>
+						<label>
+							<a class="small-button" id="motor-button-2" onclick="dheater3()">3</a>
+						</label>
+						</div>
+					</div>
+
+					<div id="number-phases">
+						<p>Phases</p>
+						<div id="number-phases-inside">
+						<label>
+							<a class="small-button" id="phase-button-1">1</a>
+						</label>
+						<label>
+							<a class="small-button" id="phase-button-2">2</a>
+						</label>
+						</div>
+					</div>
+					<div id="engine-extras">
+						<div id="engine-extras-inside">
+						<label>
+							<a class="small-button" id="engine-extras-button-1" onclick="dheater1()">1</a>
+						</label>
+						<label>
+							<a class="small-button" id="engine-extras-button-2" onclick="dheater2()">2</a>
+						</label>
+						<label>
+							<a class="small-button" id="engine-extras-button-2" onclick="dheater3()">3</a>
+						</label>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="button-bar" id="recuperator">
+					recuperator
+					<div id="recuperator-button">
+						<label>
+							<a class="small-button" id="recuperator-button-1" onclick="dheater1()">1</a>
+						</label>
+						<label>
+							<a class="small-button" id="recuperator-button-2" onclick="dheater2()">2</a>
+						</label>
+						<label>
+							<a class="small-button" id="recuperator-button-2" onclick="dheater3()">3</a>
+						</label>
+					</div>
+
+					<div id="recuperator-text">
+						<label>
+							<input type="text" name="engine-power" id="engine-power" placeholder="Kw">
+						</label>
+						<label>
+							<input type="text" name="engine-amount" id="engine-amount" placeholder="number">
+						</label>
+						<label>
+							<input type="text" name="engine-amount" id="engine-amount" placeholder="number">
+						</label>
+					</div>
+				</div>
+
+
+
+
+			
+				<div class="button-bar" id="cross-flow-heat-ex">
+					cross-flow-heater-ex
+				</div>
+
+				<div class="button-bar" id="mixing-chamber">
+					mixing-chamber
+				</div>
+
+				<div class="button-bar" id="extras">
+					extras
+				</div>
+
+			</form>
+		</div>
+
+		<div id="image-obj-2" class="image-obj">
+			bla with image
+		</div>
+</div>
+<div id="lasty" class="wrapper">
+	<div>
+		Dozhi.
+	</div>
+</div>
+
+</div>
+</body>
+</html>
